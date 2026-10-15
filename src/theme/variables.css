@@ -1,2 +1,27 @@
-/* For information on how to create your own theme, please refer to:
-http://ionicframework.com/docs/theming/ */
+
+:root {
+  --ion-background-color: #f3f6fc;
+  --ion-text-color: #172b4d;
+  --ion-font-family: Arial, sans-serif;
+}
+
+/* Campos de texto en todas las páginas */
+ion-input {
+  --background: #ffffff;
+  --color: #172b4d;
+  --placeholder-color: #64748b;
+  --highlight-color-focused: #2563eb;
+  --border-radius: 12px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  color-scheme: light;
+}
+
+/* Texto interno del campo */
+ion-input::part(native) {
+  background: #ffffff !important;
+  color: #172b4d !important;
+  -webkit-text-fill-color: #172b4d !important;
+  opacity: 1;
+  box-shadow: none !important;
+}

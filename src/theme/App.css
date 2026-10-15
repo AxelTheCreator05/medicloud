@@ -1,0 +1,155 @@
+:root {
+  --app-background: #f0f6fd;
+  --app-primary: #087eae;
+  --app-primary-dark: #07678f;
+  --app-text: #17345f;
+  --app-muted: #647b98;
+  --app-border: #dce8f5;
+  --app-card: #ffffff;
+
+  --ion-background-color: #f0f6fd;
+  --ion-text-color: #17345f;
+  --ion-font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--app-text);
+}
+
+ion-app {
+  background: var(--app-background);
+  font-family: Arial, sans-serif;
+}
+
+ion-content.app-content {
+  --background: var(--app-background);
+  --color: var(--app-text);
+}
+
+ion-toolbar.app-toolbar {
+  --background: #ffffff;
+  --color: var(--app-text);
+  --border-color: var(--app-border);
+  --min-height: 58px;
+}
+
+ion-toolbar.app-toolbar ion-title {
+  color: var(--app-text);
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 18px 40px;
+  box-sizing: border-box;
+}
+
+.page-heading {
+  margin: 8px 0 28px;
+  text-align: center;
+}
+
+.page-heading h1,
+.page-heading h2 {
+  margin: 0 0 10px;
+  color: var(--app-text);
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.page-heading p {
+  max-width: 540px;
+  margin: 0 auto;
+  color: var(--app-muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.app-card {
+  display: block;
+  margin: 0 0 18px;
+  padding: 24px;
+  box-sizing: border-box;
+  background: var(--app-card);
+  border: 1px solid var(--app-border);
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(23, 52, 95, 0.06);
+}
+
+.app-card ion-input,
+.app-card ion-select,
+.app-card ion-textarea {
+  display: block;
+  width: 100%;
+  margin: 0 0 18px;
+  --background: #ffffff;
+  --color: #17345f;
+  --placeholder-color: #879ab1;
+  --border-color: #cbdced;
+  --border-radius: 12px;
+  --highlight-color-focused: var(--app-primary);
+  --padding-start: 14px;
+  --padding-end: 14px;
+  box-sizing: border-box;
+}
+
+.app-card ion-input::part(native),
+.app-card ion-textarea::part(native) {
+  color: #17345f;
+  -webkit-text-fill-color: #17345f;
+}
+
+.app-card ion-button,
+.page-container > ion-button {
+  --background: var(--app-primary);
+  --background-hover: var(--app-primary-dark);
+  --border-radius: 12px;
+  --box-shadow: none;
+  min-height: 46px;
+  font-weight: 700;
+}
+
+.app-list {
+  padding: 0;
+  background: transparent;
+}
+
+.app-list ion-item {
+  margin-bottom: 10px;
+  --background: #ffffff;
+  --color: var(--app-text);
+  --border-color: #edf2f8;
+  --padding-start: 16px;
+  --inner-padding-end: 16px;
+  border: 1px solid var(--app-border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.muted-text {
+  color: var(--app-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    padding: 20px 14px 30px;
+  }
+
+  .page-heading h1,
+  .page-heading h2 {
+    font-size: 24px;
+  }
+
+  .app-card {
+    padding: 18px;
+    border-radius: 15px;
+  }
+}

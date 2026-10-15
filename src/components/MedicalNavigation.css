@@ -1,0 +1,94 @@
+
+.medical-navigation {
+  width: 100%;
+  background: #ffffff;
+  border-top: 1px solid #edf2f8;
+  border-bottom: 1px solid #dce8f5;
+  box-shadow: 0 5px 16px rgba(23, 52, 95, 0.04);
+}
+
+.medical-navigation-inner {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  box-sizing: border-box;
+}
+
+.medical-nav-link {
+  display: inline-flex;
+  flex: 0 1 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-width: 0;
+  padding: 12px 19px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  color: #647b98;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.medical-nav-link ion-icon {
+  flex-shrink: 0;
+  font-size: 19px;
+}
+
+.medical-nav-link:hover {
+  color: #087eae;
+  background: #f0f8ff;
+}
+
+.medical-nav-link.active {
+  color: #087eae;
+  background: #eaf7ff;
+  border-color: #d1edfc;
+}
+
+@media (max-width: 600px) {
+  .medical-navigation-inner {
+    justify-content: flex-start;
+    gap: 6px;
+    padding: 8px 12px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .medical-nav-link {
+    flex: 0 0 auto;
+    gap: 7px;
+    padding: 11px 14px;
+    font-size: 13px;
+  }
+
+  .medical-nav-link ion-icon {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 350px) {
+  .medical-navigation-inner {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .medical-nav-link {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+}
